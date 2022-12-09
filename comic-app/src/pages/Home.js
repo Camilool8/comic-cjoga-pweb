@@ -7,7 +7,7 @@ export const Home = ({ comics }) => {
   return (
     <Row>
       {comics.map((comic) => (
-        <Col key={comic.id} xs={3}>
+        <Col key={comic.id} xl={2} lg={3} md={4} sm={6} xs={12}>
           <Link to={`/comic/${comic.id}`}>
             <img
               class="home-img"

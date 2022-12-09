@@ -27,9 +27,7 @@ export const Comic = () => {
         margin: "20px auto",
         borderRadius: "10px",
         boxShadow: "5px 5px 5px 5px #888888",
-        color: "rgb(0, 0, 0)",
-        verticalAlign: "middle",
-        maxWidth: "1000px",
+        maxWidth: "700px",
       }}
     >
       <Col lg={12}>
@@ -41,19 +39,29 @@ export const Comic = () => {
             textAlign: "center",
             padding: "10px",
             textShadow: "2px 2px 2px #888888",
+            margin: "30px auto 0 auto",
           }}
         >
           <>{comic.volume.name}</>
         </h1>
       </Col>
-      <Col lg={6}>
+      <Col
+        lg={12}
+        xs={12}
+        style={{
+          padding: "10px",
+          textAlign: "center",
+          margin: "20px auto",
+          verticalAlign: "middle",
+        }}
+      >
         <img
           style={{
             maxWidth: "100%",
-            height: "90%",
+            height: "auto",
             borderRadius: "10px",
             boxShadow: "0 0 5px 0 black",
-            margin: "20px 100px",
+            margin: "0 auto",
             textAlign: "center",
           }}
           src={comic.image.small_url}
@@ -61,11 +69,11 @@ export const Comic = () => {
         />
       </Col>
       <Col
-        lg={6}
+        lg={3}
         style={{
           padding: "10px",
           textAlign: "center",
-          margin: "30px auto",
+          margin: "0 auto",
           verticalAlign: "middle",
         }}
       >
