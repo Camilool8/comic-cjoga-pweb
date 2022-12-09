@@ -15,6 +15,16 @@ export const Home = ({ comics }) => {
               alt={comic.name}
               style={{}}
             />
+            <p
+              style={{
+                "text-align": "center",
+                "font-size": "15px",
+                "font-weight": "bold",
+                color: "black",
+              }}
+            >
+              {comic.volume.name} ({comic.cover_date})
+            </p>
           </Link>
         </Col>
       ))}
